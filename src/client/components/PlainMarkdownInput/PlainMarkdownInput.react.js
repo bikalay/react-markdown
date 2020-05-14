@@ -421,11 +421,11 @@ class PlainMarkdownInput extends PureComponent {
    */
   getHeaderButtons = ({ disabled, locale }) => (
     <div className="btn-group" title={getMessage(locale, 'insertHeader')}>
-      <DropdownButton
-        id="oc-md--toolbar__headers-dropdown"
-        title={<i className="fa fa-header"/>}
-        disabled={disabled}
-      >
+      <button className="btn btn-default dropdown-toggle" type="button" id="dropdownHeadersButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false" disabled={disabled}>
+        <i className="fa fa-header"/>
+      </button>
+      <div className="dropdown-menu" aria-labelledby="dropdownHeadersButton">
         {[1, 2, 3, 4, 5, 6].map((level, i) => (
           <HeaderButton
             key={i}
@@ -433,7 +433,7 @@ class PlainMarkdownInput extends PureComponent {
             level={level}
           />
         ))}
-      </DropdownButton>
+      </div>
     </div>
   )
 
