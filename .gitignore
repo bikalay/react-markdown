@@ -5,7 +5,6 @@ tmp
 npm-debug.log
 /static
 /build
-/lib
 /node_modules
 /.gh-pages-tmp
 demo.tar.gz
