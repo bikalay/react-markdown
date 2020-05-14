@@ -423,7 +423,7 @@ class PlainMarkdownInput extends PureComponent {
     <div className="btn-group" title={getMessage(locale, 'insertHeader')}>
       <button className="btn btn-default dropdown-toggle" type="button" id="dropdownHeadersButton" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false" disabled={disabled}>
-        <i className="fa fa-header"/>
+        <i className="fa fa-heading"/>
       </button>
       <div className="dropdown-menu" aria-labelledby="dropdownHeadersButton">
         {[1, 2, 3, 4, 5, 6].map((level, i) => (
