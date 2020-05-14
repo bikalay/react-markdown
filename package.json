@@ -1,5 +1,5 @@
 {
-  "name": "@opuscapita/react-markdown",
+  "name": "react-markdown-editor",
   "version": "2.3.13",
   "description": "React markdown editor component",
   "scripts": {
